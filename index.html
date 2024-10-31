@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu de Ping-Pong</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="menu">
+        <h1>Ping Fernandes</h1>
+        <button id="one-player">Contre l'IA</button>
+        <button id="two-players">Versus</button>
+    </div>
+
+    <div id="difficulty-menu" style="display:none;">
+        <h2>Choisissez la difficulté</h2>
+        <button id="easy">Facile</button>
+        <button id="medium">Moyen</button>
+        <button id="hard">Difficile</button>
+    </div>
+
+    <div id="color-menu" style="display:none;">
+        <h2>Choisissez les couleurs des joueurs</h2>
+        <input type="color" id="player1-color" value="#00ff00">
+        <input type="color" id="player2-color" value="#ff0000">
+        <button id="start-game">Commencer le Jeu</button>
+    </div>
+
+    <div id="game-container" style="display:none;">
+        <div id="score">
+            <div id="score1">Score Joueur 1: 0</div>
+            <div id="score2">Score Joueur 2: 0</div>
+        </div>
+        <div id="game"></div>
+    </div>
+
+    <div id="victory-message" style="display:none;">
+        <h2 id="victory-text">Vous avez gagné !</h2>
+        <img id="victory-image" src="Pino.jpg" alt="Victoire">
+        <button id="restart-game">Rejouer</button>
+        <button id="back-to-menu">Menu Principal</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/phaser/3.55.2/phaser.min.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
